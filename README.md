@@ -13,4 +13,6 @@ Stall Management(Set as Occupied): This is a button where the user will enter ne
 Tenant Info: This is where the user can see full info
 ![Tenant Info](https://github.com/CarlosNatanauan/Tagpuan-Food-Park/assets/94023674/92d93a8f-4086-4c31-bc06-6587e3e8f639)
 
-This is what it looks like when selected by the user.
+This is what it looks like when selected by the user:
+![info](https://github.com/CarlosNatanauan/Tagpuan-Food-Park/assets/94023674/8d35a0db-9cfd-4a3d-bdfd-0db66c79c6e7)
+
