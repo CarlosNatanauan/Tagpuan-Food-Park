@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AAFDFC5-9E2E-40FC-BBC4-3E5501BF9ED1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TagpuanFoodPark</RootNamespace>
+    <AssemblyName>TagpuanFoodPark</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.8.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.0.8\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseCodes.cs" />
+    <Compile Include="FRMdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMdashboard.Designer.cs">
+      <DependentUpon>FRMdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMpayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMpayment.Designer.cs">
+      <DependentUpon>FRMpayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMsetInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMsetInfo.Designer.cs">
+      <DependentUpon>FRMsetInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMinfo.Designer.cs">
+      <DependentUpon>FRMinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMmain.Designer.cs">
+      <DependentUpon>FRMmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMstallManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMstallManagement.Designer.cs">
+      <DependentUpon>FRMstallManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMtenantDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMtenantDetails.Designer.cs">
+      <DependentUpon>FRMtenantDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TagpuanFoodParkDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TagpuanFoodParkDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TagpuanFoodParkDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TagpuanFoodParkDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TagpuanFoodParkDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TagpuanFoodParkDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TagpuanFoodParkDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TagpuanFoodParkDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TagpuanFoodParkDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TagpuanFoodParkDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UCavailable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCavailable.Designer.cs">
+      <DependentUpon>UCavailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCoccupied.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCoccupied.Designer.cs">
+      <DependentUpon>UCoccupied.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FRMdashboard.resx">
+      <DependentUpon>FRMdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMpayment.resx">
+      <DependentUpon>FRMpayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMsetInfo.resx">
+      <DependentUpon>FRMsetInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMinfo.resx">
+      <DependentUpon>FRMinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMmain.resx">
+      <DependentUpon>FRMmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMstallManagement.resx">
+      <DependentUpon>FRMstallManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMtenantDetails.resx">
+      <DependentUpon>FRMtenantDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UCavailable.resx">
+      <DependentUpon>UCavailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCoccupied.resx">
+      <DependentUpon>UCoccupied.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TagpuanFoodParkDataSet.xsc">
+      <DependentUpon>TagpuanFoodParkDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TagpuanFoodParkDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TagpuanFoodParkDataSet.xss">
+      <DependentUpon>TagpuanFoodParkDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet1.xsc">
+      <DependentUpon>TagpuanFoodParkDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TagpuanFoodParkDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TagpuanFoodParkDataSet1.xss">
+      <DependentUpon>TagpuanFoodParkDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet2.xsc">
+      <DependentUpon>TagpuanFoodParkDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TagpuanFoodParkDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TagpuanFoodParkDataSet2.xss">
+      <DependentUpon>TagpuanFoodParkDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet3.xsc">
+      <DependentUpon>TagpuanFoodParkDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TagpuanFoodParkDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TagpuanFoodParkDataSet3.xss">
+      <DependentUpon>TagpuanFoodParkDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet4.xsc">
+      <DependentUpon>TagpuanFoodParkDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TagpuanFoodParkDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TagpuanFoodParkDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TagpuanFoodParkDataSet4.xss">
+      <DependentUpon>TagpuanFoodParkDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pictures\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
