@@ -16,3 +16,4 @@ Tenant Info: This is where the user can see full info
 This is what it looks like when selected by the user:
 ![info](https://github.com/CarlosNatanauan/Tagpuan-Food-Park/assets/94023674/8d35a0db-9cfd-4a3d-bdfd-0db66c79c6e7)
 
+Note: This project is still a work-in-progress
